@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XapoNavigationBar" customModule="XapoTestReactiveReactive" customModuleProvider="target">
+            <connections>
+                <outlet property="leftButtonsStack" destination="QmT-kb-UcC" id="Kvo-oR-HBP"/>
+                <outlet property="leftTitleConstraint" destination="o2f-b1-Uyh" id="xMq-JQ-xs4"/>
+                <outlet property="rightButtonsStack" destination="Usw-xK-sFw" id="x0s-Ae-dWc"/>
+                <outlet property="titleActionButton" destination="BZn-2K-Qdo" id="0C1-Sd-2pd"/>
+                <outlet property="titleLabel" destination="AVY-Nz-wFt" id="FTd-zZ-XLw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QmT-kb-UcC">
+                    <rect key="frame" x="0.0" y="0.0" width="16" height="56"/>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZn-2K-Qdo">
+                    <rect key="frame" x="16" y="0.0" width="80" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="5Xm-rB-EjO"/>
+                    </constraints>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVY-Nz-wFt">
+                    <rect key="frame" x="16" y="0.0" width="343" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="750" constant="56" id="PzD-1I-V0Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Usw-xK-sFw">
+                    <rect key="frame" x="359" y="0.0" width="0.0" height="56"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" name="xapoBlue"/>
+            <constraints>
+                <constraint firstItem="AVY-Nz-wFt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" priority="750" id="1Zm-fC-IQg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Usw-xK-sFw" secondAttribute="trailing" constant="16" id="500-XO-sNB"/>
+                <constraint firstItem="QmT-kb-UcC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6pd-dW-zSD"/>
+                <constraint firstItem="QmT-kb-UcC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ExL-KN-b0K"/>
+                <constraint firstItem="AVY-Nz-wFt" firstAttribute="leading" secondItem="QmT-kb-UcC" secondAttribute="trailing" id="FZ5-OL-tLI"/>
+                <constraint firstItem="Usw-xK-sFw" firstAttribute="leading" secondItem="AVY-Nz-wFt" secondAttribute="trailing" id="IFh-9p-Srz"/>
+                <constraint firstItem="BZn-2K-Qdo" firstAttribute="centerY" secondItem="AVY-Nz-wFt" secondAttribute="centerY" id="K2v-NS-yRq"/>
+                <constraint firstAttribute="bottom" secondItem="QmT-kb-UcC" secondAttribute="bottom" id="RDe-Y6-zO0"/>
+                <constraint firstItem="BZn-2K-Qdo" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="VYO-Vj-2PU"/>
+                <constraint firstItem="Usw-xK-sFw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WZG-HJ-wyY"/>
+                <constraint firstItem="AVY-Nz-wFt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="a7j-ZU-cbc"/>
+                <constraint firstAttribute="bottom" secondItem="Usw-xK-sFw" secondAttribute="bottom" id="eTw-01-Hmb"/>
+                <constraint firstItem="AVY-Nz-wFt" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="gqa-I0-Wlh"/>
+                <constraint firstItem="AVY-Nz-wFt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" priority="750" constant="16" id="o2f-b1-Uyh"/>
+                <constraint firstItem="BZn-2K-Qdo" firstAttribute="leading" secondItem="AVY-Nz-wFt" secondAttribute="leading" id="zjx-UO-Dap"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="64.799999999999997" y="-150.22488755622189"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="xapoBlue">
+            <color red="0.20399999618530273" green="0.23899999260902405" blue="0.3059999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

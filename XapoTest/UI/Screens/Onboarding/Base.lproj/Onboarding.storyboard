@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="XapoTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPL-Dq-6D7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hms-ym-Uo0">
+                                        <rect key="frame" x="279" y="40" width="83" height="123"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Go to Xapo"/>
+                                        <connections>
+                                            <action selector="didTapGoToXapo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Loi-8H-Bge"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWq-be-I76">
+                                        <rect key="frame" x="20" y="401" width="335" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOW-W6-V6P">
+                                        <rect key="frame" x="47" y="404" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aG4-6a-697">
+                                        <rect key="frame" x="67" y="537" width="241" height="48"/>
+                                        <color key="backgroundColor" name="xapoSoftRed"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="9hW-Y1-tVo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Enter the app">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="26"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapEnterApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n6H-7Z-TXu"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZJa-VZ-Fep">
+                                        <rect key="frame" x="32" y="617" width="311" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="dAD-qV-qag"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="aG4-6a-697" secondAttribute="trailing" constant="67" id="09m-BP-g92"/>
+                                    <constraint firstItem="FOW-W6-V6P" firstAttribute="leading" secondItem="kPL-Dq-6D7" secondAttribute="leading" constant="47" id="0Ia-cw-k0O"/>
+                                    <constraint firstItem="FOW-W6-V6P" firstAttribute="top" secondItem="HWq-be-I76" secondAttribute="bottom" constant="3" id="0Ye-GR-3rq"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZJa-VZ-Fep" secondAttribute="trailing" constant="32" id="2HI-iE-s6k"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FOW-W6-V6P" secondAttribute="trailing" constant="47" id="7jn-P6-CoP"/>
+                                    <constraint firstItem="HWq-be-I76" firstAttribute="leading" secondItem="kPL-Dq-6D7" secondAttribute="leading" constant="20" id="9fJ-ge-Gcb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hms-ym-Uo0" secondAttribute="trailing" constant="13" id="CM8-Lh-yCe"/>
+                                    <constraint firstItem="ZJa-VZ-Fep" firstAttribute="top" secondItem="aG4-6a-697" secondAttribute="bottom" constant="32" id="LP3-ZA-SDb"/>
+                                    <constraint firstItem="Hms-ym-Uo0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kPL-Dq-6D7" secondAttribute="leading" constant="20" symbolic="YES" id="MM0-ba-cXu"/>
+                                    <constraint firstItem="Hms-ym-Uo0" firstAttribute="top" secondItem="kPL-Dq-6D7" secondAttribute="top" constant="40" id="Rh1-Y7-pKw"/>
+                                    <constraint firstItem="aG4-6a-697" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FOW-W6-V6P" secondAttribute="bottom" constant="15" id="S9I-BW-did"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZJa-VZ-Fep" secondAttribute="bottom" constant="20" id="akj-X9-qwf"/>
+                                    <constraint firstItem="aG4-6a-697" firstAttribute="leading" secondItem="kPL-Dq-6D7" secondAttribute="leading" constant="67" id="bbF-cT-Th1"/>
+                                    <constraint firstAttribute="trailing" secondItem="HWq-be-I76" secondAttribute="trailing" constant="20" id="er5-Og-igu"/>
+                                    <constraint firstItem="ZJa-VZ-Fep" firstAttribute="leading" secondItem="kPL-Dq-6D7" secondAttribute="leading" constant="32" id="idR-O2-Ahf"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XZl-SQ-Nzn">
+                                <rect key="frame" x="137" y="283" width="101" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="Q7M-SC-S1Q"/>
+                                    <constraint firstAttribute="width" constant="101" id="Vgb-7b-4ul"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="xapoBlue"/>
+                        <constraints>
+                            <constraint firstItem="kPL-Dq-6D7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="33L-j8-42D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kPL-Dq-6D7" secondAttribute="trailing" id="Db0-hB-B3R"/>
+                            <constraint firstItem="kPL-Dq-6D7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LbE-Af-N1A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kPL-Dq-6D7" secondAttribute="bottom" id="Pdm-an-cb0"/>
+                            <constraint firstItem="HWq-be-I76" firstAttribute="top" secondItem="XZl-SQ-Nzn" secondAttribute="bottom" constant="17" id="aH9-Vy-4Xb"/>
+                            <constraint firstItem="XZl-SQ-Nzn" firstAttribute="top" relation="lessThanOrEqual" secondItem="Hms-ym-Uo0" secondAttribute="bottom" constant="120" id="dJz-Zq-usd"/>
+                            <constraint firstItem="XZl-SQ-Nzn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rI5-xl-3De"/>
+                            <constraint firstItem="XZl-SQ-Nzn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="tGr-mI-y6c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="kPL-Dq-6D7" id="epL-iy-pJw"/>
+                        <outlet property="dummyTextLabel" destination="FOW-W6-V6P" id="9gU-72-CBb"/>
+                        <outlet property="logoIcon" destination="XZl-SQ-Nzn" id="N3U-9j-ie5"/>
+                        <outlet property="logoIconCenterYConstraint" destination="tGr-mI-y6c" id="f8p-zg-xzb"/>
+                        <outlet property="logoIconTopConstraint" destination="dJz-Zq-usd" id="EzN-gF-4fV"/>
+                        <outlet property="termsTextView" destination="ZJa-VZ-Fep" id="USS-go-jHk"/>
+                        <outlet property="welcomeLabel" destination="HWq-be-I76" id="4o5-Si-pcG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logoIcon" width="101" height="101.5"/>
+        <namedColor name="xapoBlue">
+            <color red="0.20399999618530273" green="0.23899999260902405" blue="0.3059999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="xapoSoftRed">
+            <color red="0.98799997568130493" green="0.3919999897480011" blue="0.29399999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
